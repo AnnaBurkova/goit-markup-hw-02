@@ -1,0 +1,87 @@
+:root{
+    --main-text-color: #212121;
+    --additional-text-color:#757575;
+    --accent-color:#2196F3;
+    --selection-text-color:#FFFFFF;
+}
+
+body{
+    background-color:#FFFFFF ;
+    color:var(--main-text-color) ;
+}
+
+.list {
+    list-style: none;
+}
+
+/* Основний колір тексту: #212121; */
+/* Додатковий колір тексту: #757575; */
+/* Білий : #FFFFFF; */
+/* Акцент : #2196F3 */
+
+/* Шапка background: #FFFFFF; */
+/* Секція 2 та футер #2F303A */
+/* Секціям Чим ми займаємося #F5F5F5 */
+/* Наша команда : #F5F4FA; */
+
+
+
+.logo {
+    color:#000000;
+    color:var(--accent-color);
+}
+
+/* Site nav */
+.site-nav .link {
+    color:var(--main-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color:var(--main-text-color);
+}
+.site-nav .link.current{
+    color:var(--accent-color);
+}
+
+/* Connect-nav */
+.connect-nav .link{
+     color:var(--main-text-color);
+}
+
+.connect-nav .link:hover,
+.connect-nav .link:focus {
+    color:var(--accent-color);
+}
+
+/* hero */
+
+/* Sections */
+.section-title{
+    color:#var(--main-text-color) ;
+}
+
+/* Benefits */
+.benefits .title {
+    color:var(--main-text-color) ;
+}
+
+.benefits .text{
+    color:var(--additional-text-color)
+}
+/* work examles */
+
+/* Team */
+.team .title{
+    color:var(--main-text-color);
+}
+
+.team .text{
+    color:var(--additional-text-color) ;
+}
+
+/* Button */
+.button{
+    color:var(--selection-text-color);
+    background-color:var(--accent-color);
+}
