@@ -34,17 +34,15 @@ body {
 
 /* Logo */
 .logo-link,.logo,.logo-sec {
-    color:#000000;
-    color:var(--main-text-color);
+    color: var(--accent-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     text-decoration-line: none;
 }
-
-.logo-link {
-    color: var(--accent-color);
+.logo{
+    color: var(--main-text-color);
 }
 
 .logo-sec{
@@ -73,7 +71,7 @@ body {
  
 /* Connect-nav */
 .connect-nav .link{
-     color:var(--main-text-color);
+     color:var(--additional-text-color);
      font-weight: 500;
      font-size: 14px;
      line-height: 1.14;
@@ -111,19 +109,30 @@ body {
      text-align: center;
 }
 
+.visually-hidden {
+     position: absolute;
+     white-space: nowrap;
+     width: 1px;
+     height: 1px;
+     overflow: hidden;
+     border: 0;
+     padding: 0;
+     clip: rect(0 0 0 0);
+     clip-path: inset(50%);
+     margin: -1px;
+}
+
 
 /* Benefits */
-.benefits {
-     background-color: var(--section-work-background-color);
-}
-.benefits .title {
+
+.benefits-title {
      color:var(--main-text-color) ;
      font-weight: 700;
      font-size: 14px;
      line-height: 1.14;
      text-transform: uppercase;
 }
-.benefits .text{
+.benefits-text{
      color:var(--additional-text-color)
      font-size: 14px;
      line-height: 1.71;
@@ -131,9 +140,7 @@ body {
 
 
 /* work examples */
-.work {
-    background-color:var(--section-work-background-color);
-}
+
 
 /* Team */
 .team {
@@ -154,7 +161,7 @@ body {
 .team .text{
      color:var(--additional-text-color) ;
      font-size: 16px;
-     line-height: 1.19
+     line-height: 1.19;
      text-align: center ;
 }
 
@@ -166,10 +173,9 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
 .button-filter{
@@ -179,6 +185,8 @@ body {
      font-size: 16px;
      line-height: 1.62;
      text-align: center;
+    letter-spacing: 0.03em;
+     cursor: pointer;
 }
 
 .button-filter:active{
@@ -195,9 +203,7 @@ body {
 
 
 /* Projects */
-.projects{
-    background-color: var(--section-work-background-color);
-}
+
 .projects-title {
      font-weight: 700;
      font-size: 18px;
