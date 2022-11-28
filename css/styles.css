@@ -52,7 +52,7 @@ body {
 
 /* Site nav */
 .site-nav .link {
-    color:var(--main-text-color);
+    color: var(--main-text-color) ;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -60,23 +60,41 @@ body {
     text-decoration-line: none;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.nav-link{
+    color: var(--main-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration-line: none;
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus {
     color:var(--accent-color);
 }
-.site-nav .link.current{
+.current{
     color:var(--accent-color);
 }
 
  
 /* Connect-nav */
-.connect-nav .link{
+.connect-nav {
      color:var(--additional-text-color);
      font-weight: 500;
      font-size: 14px;
      line-height: 1.14;
      letter-spacing: 0.02em;
      text-decoration-line: none;
+}
+
+.link {
+    color: var(--additional-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration-line: none;
 }
 
 .connect-nav .link:hover,
