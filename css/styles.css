@@ -8,6 +8,8 @@
     --section-work-background-color:#F5F5F5;
     --section-team-background-color:#F5F4FA;
     --footer-text-color:rgba(255, 255, 255, 0.6);
+    --button-main-hero-color:#2196F3;
+    --button-active-hero-color:#188CE8;
 }
 
 body {
@@ -187,7 +189,7 @@ body {
 .button {
     font-family: inherit;
     color: var(--selection-text-color);
-    background-color: var(--accent-color);
+    background-color: var(--button-main-hero-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -196,8 +198,18 @@ body {
     cursor: pointer;
 }
 
+.button:hover,
+.button:focus{
+    background-color: var(--button-main-hero-color);
+}
+
+.button:active{
+    background-color:var(--button-active-hero-color) ; 
+}
+
 .button-filter{
      font-family: inherit;
+     background-color: var(--section-team-background-color);
      color: var(--main-text-color);
      font-weight: 500;
      font-size: 16px;
@@ -223,6 +235,7 @@ body {
 /* Projects */
 
 .projects-title {
+     color: var(--main-text-color);
      font-weight: 700;
      font-size: 18px;
      line-height: 2.00;
@@ -234,26 +247,38 @@ body {
     line-height: 1.88;
 }
 
+.project-link{
+    text-decoration:none;
+}
+
 
 /* Футер */
 footer{
     background-color: var(--hero-background-color);
 }
 
-.connect-foot .link{
+.connect-foot {
      color: var(--footer-text-color);
-     font-style: normal;
      font-size: 14px;
      line-height: 1.71;
      text-decoration-line: none;
 }
-.connect-foot .phys-add {
+
+.connect-link{
+    color:var(--footer-text-color) ;
+    font-style:normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration-line: none;
+    letter-spacing:0.03em;
+}
+
+.phys-add {
     color:var(--selection-text-color);
 }
 
-.connect-foot .link:hover,
-.connect-foot .link:focus {
+.connect-foot .connect-link:hover,
+.connect-foot .connect-link:focus {
      color: var(--accent-color);
 }
-
- 
